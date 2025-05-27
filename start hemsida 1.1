@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5S Konsulttjänster</title>
+  <style>
+    :root {
+      --background: #f8f8f8;
+      --text: #111;
+      --primary: #ffffff;
+      --accent: #888;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    header {
+      background: #000;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+
+    .hero {
+      position: relative;
+      height: 70vh;
+      overflow: hidden;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      animation: slide 20s infinite;
+    }
+
+    @keyframes slide {
+      0% {opacity: 1;}
+      33% {opacity: 0;}
+      66% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+
+    .contact-form {
+      background: #eee;
+      padding: 2rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .contact-form button {
+      background: #111;
+      color: white;
+      padding: 0.7rem 2rem;
+      border: none;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    @media(max-width: 768px) {
+      nav a {
+        margin: 0 0.5rem;
+      }
+      .hero {
+        height: 50vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>5S Konsult</h1>
+    <nav>
+      <a href="#start">Start</a>
+      <a href="#tjanster">Tjänster</a>
+      <a href="#omoss">Om Oss</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <img src="https://via.placeholder.com/1200x600?text=Industri+1" style="animation-delay: 0s;">
+    <img src="https://via.placeholder.com/1200x600?text=Industri+2" style="animation-delay: 6s;">
+    <img src="https://via.placeholder.com/1200x600?text=Industri+3" style="animation-delay: 12s;">
+  </div>
+
+  <section id="start">
+    <h2>Välkommen till 5S Konsult</h2>
+    <p>Vi hjälper industriföretag att skapa ordning, struktur och effektivitet genom beprövade 5S-metoder.</p>
+  </section>
+
+  <section id="tjanster">
+    <h2>Våra Tjänster</h2>
+    <p>Vi erbjuder anpassade 5S-lösningar beroende på din budget, tid och behov av konsultnärvaro. Välj mellan:
+      <ul>
+        <li>Grundpaket – Digital rådgivning och mallar</li>
+        <li>Standardpaket – Workshops och uppföljning</li>
+        <li>Premium – Fullt konsultstöd på plats</li>
+      </ul>
+    </p>
+  </section>
+
+  <section id="omoss">
+    <h2>Om Företaget</h2>
+    <p>Vi är specialister inom 5S-metodik med erfarenhet från olika branscher. Vår vision är att skapa hållbara förbättringar genom struktur, säkerhet och ordning.</p>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakta oss</h2>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Namn" required>
+        <input type="email" placeholder="E-post" required>
+        <textarea rows="5" placeholder="Ditt meddelande" required></textarea>
+        <button type="submit">Skicka</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 5S Konsult AB | kontakt@5skonsult.se</p>
+  </footer>
+</body>
+</html>
